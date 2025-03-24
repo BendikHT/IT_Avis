@@ -62,7 +62,7 @@ header{
 
 main{
     display: grid;
-    width: 80%;
+    width: fit-content;
 }
 
 .grid{
