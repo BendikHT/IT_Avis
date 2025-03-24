@@ -29,6 +29,14 @@ ul {
     list-style: none;
 }
 
+:root{
+    --bakgrunn-mork:#0d0221;
+    --logofarge:#1C5D99;
+    --lyseblaa:#B8D0Eb;
+    --tekst-hvit:white;
+    --tekst-svart:black;
+}
+
 img {
     max-width: 100%;
     height: auto;
