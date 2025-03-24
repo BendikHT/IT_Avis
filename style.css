@@ -31,6 +31,7 @@ ul {
 
 :root{
     --bakgrunn-mork:#0d0221;
+    --bakgrunn-lys:#faf0e6;
     --logofarge:#1C5D99;
     --lyseblaa:#B8D0Eb;
     --tekst-hvit:white;
@@ -47,6 +48,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: var(--bakgrunn-mork);
 }
 
 header{
