@@ -48,7 +48,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--bakgrunn-mork);
+    background-color: var(--bakgrunn-lys);
 }
 
 header{
