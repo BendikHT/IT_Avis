@@ -2,14 +2,14 @@
 main{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border: 1px dashed black
+    align-items: flex-start;
+    border: 1px dashed black;
+    width: 60%;
 }
 
 #info{
     border: 1px solid black;
+    width: 30%;
+    margin-top: 20px;
 }
 
-#hovedbilde{
-    width: 60%
-}
