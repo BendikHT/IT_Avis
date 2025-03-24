@@ -29,6 +29,15 @@ ul {
     list-style: none;
 }
 
+:root{
+    --bakgrunn-mork:#0d0221;
+    --bakgrunn-lys:	#ffeed6;
+    --logofarge:#1C5D99;
+    --lyseblaa:#B8D0Eb;
+    --tekst-hvit:white;
+    --tekst-svart:black;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -39,13 +48,14 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: var(--bakgrunn-lys);
 }
 
 header{
     display: flex;
     width: 100%;
     height: 60px;
-    background-color: gray;
+    background-color: white;
     align-items: center;
     justify-content: space-evenly;
 }
