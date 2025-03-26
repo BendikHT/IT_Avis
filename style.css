@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Archivo+Black&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Arimo:ital,wght@0,400..700;1,400..700&family=Boldonse&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 html {
     box-sizing: border-box;
     font-size: 16px;
-    font-family: "Archivo Black";
+    font-family: "Roboto Flex";
 }
 
 *,
@@ -39,7 +39,7 @@ a {
 
 :root {
     --bakgrunn-mork: #0d0221;
-    --bakgrunn-lys: #faf0e6;
+    --bakgrunn-lys: #e4e4e4;
     --logofarge: #1C5D99;
     --lyseblaa: #B8D0Eb;
     --tekst-hvit: white;
@@ -64,11 +64,35 @@ body {
 
 header {
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 60px;
-    background-color: white;
+    background-color:var(--bakgrunn-lys);
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+header div{
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
+    width: 40%;
+}
+
+
+input{
+    width: 200px;
+    height: 35px;
+    border: none;
+    outline: none;
+}
+#search{
+    background-color: white;
+    padding: 5px 0px 5px 10px;
+    width: fit-content;
+}   
+#search i{
+    padding: 5px;
 }
 
 main {
@@ -105,7 +129,8 @@ article.small {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 2vw;
+    font-weight: 500;
 }
 
 h2 {
@@ -119,4 +144,15 @@ h3 {
 
 .tekst {
     padding: 15px;
+}
+
+
+@media(width < 600px){
+    h1{
+        font-size: 1rem;
+    }
+    main {
+        width: 95%;
+    }
+
 }
