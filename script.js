@@ -1,7 +1,7 @@
-document.addEventListener("click", function(event) {
-    targetId = event.target.id;
-    if(targetId === "") {
-        return
+document.addEventListener("click", function (event) {
+    let article = event.target.closest("article");
+    if (article) {
+        console.log(article.id);
+
     }
-    console.log("You clicked on a div with id:", targetId);
 });
