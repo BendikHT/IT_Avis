@@ -63,16 +63,32 @@ header{
 main{
     display: grid;
     width: fit-content;
+    max-width: 700px;
+    margin: auto;
 }
 
 .grid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 4px;
+    gap: 10px;
 }
 
 article{
     border: 2px solid black;
-    width: 100px;
-    height: 200px;
+    min-height: 100px;
+    background-color: white;
+    grid-column: span 3;
 }
+
+article.large{
+    grid-column: span 3;
+}
+
+article.medium{
+    grid-column: span 6;
+}
+
+article.small{
+    grid-column: span 2;
+}
+
