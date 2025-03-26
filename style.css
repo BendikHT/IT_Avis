@@ -64,6 +64,7 @@ main{
     display: grid;
     margin: auto;
     width: 75%;
+    margin-top: 40px;
 }
 
 .grid{
@@ -74,7 +75,7 @@ main{
 
 article{
     border: 2px solid black;
-    min-height: 100px;
+    min-height: 400px;
     background-color: white;
     grid-column: span 3;
 }
