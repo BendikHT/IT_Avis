@@ -32,26 +32,29 @@ ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--tekst-svart);
 }
 
-:root{
-    --bakgrunn-mork:#0d0221;
-    --bakgrunn-lys:	#faf0e6;
-    --logofarge:#1C5D99;
-    --lyseblaa:#B8D0Eb;
-    --tekst-hvit:white;
-    --tekst-svart:black;
+:root {
+    --bakgrunn-mork: #0d0221;
+    --bakgrunn-lys: #faf0e6;
+    --logofarge: #1C5D99;
+    --lyseblaa: #B8D0Eb;
+    --tekst-hvit: white;
+    --tekst-svart: black;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
 }
 
-body{
+#logoImg{
+    height: 80px;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +62,7 @@ body{
     background-color: var(--bakgrunn-lys);
 }
 
-header{
+header {
     display: flex;
     width: 100%;
     height: 60px;
@@ -68,20 +71,20 @@ header{
     justify-content: space-evenly;
 }
 
-main{
+main {
     display: grid;
     margin: auto;
-    width: 75%;
+    width: 70%;
     margin-top: 40px;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
 }
 
-article{
+article {
     min-height: 400px;
     background-color: white;
     grid-column: span 3;
@@ -89,32 +92,31 @@ article{
     overflow-wrap: break-word;
 }
 
-article.large{
+article.large {
     grid-column: span 6;
 }
 
-article.medium{
+article.medium {
     grid-column: span 3;
 }
 
-article.small{
+article.small {
     grid-column: span 2;
 }
 
-h1{
+h1 {
     font-size: 70px;
 }
 
-h2{
+h2 {
     font-size: 45px;
 }
 
-h3{
+h3 {
     font-size: 25px;
     color: gray;
 }
 
-.tekst{
+.tekst {
     padding: 15px;
 }
-
