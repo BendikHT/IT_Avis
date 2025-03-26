@@ -80,6 +80,7 @@ article{
     min-height: 400px;
     background-color: white;
     grid-column: span 3;
+    cursor: pointer;
 }
 
 article.large{
