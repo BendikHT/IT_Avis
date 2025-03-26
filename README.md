@@ -32,5 +32,7 @@ Lysere tekstfarge: #3D3329
     Archivo Narrow
     Alegreya Sans
 
-
+symboler:
+    <i class="fa-regular fa-sun"></i>
+    <i class="fa-solid fa-moon"></i>
 
