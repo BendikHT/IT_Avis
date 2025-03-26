@@ -92,3 +92,16 @@ article.small{
     grid-column: span 2;
 }
 
+h1{
+    font-size: 70px;
+}
+
+h3{
+    font-size: 25px;
+    color: gray;
+}
+
+.tekst{
+    padding: 15px;
+}
+
