@@ -32,6 +32,11 @@ ul {
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+    color: var(--tekst-svart);
+}
+
 :root{
     --bakgrunn-mork:#0d0221;
     --bakgrunn-lys:	#faf0e6;
