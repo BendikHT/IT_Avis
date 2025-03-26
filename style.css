@@ -62,9 +62,8 @@ header{
 
 main{
     display: grid;
-    width: fit-content;
-    max-width: 700px;
     margin: auto;
+    width: 75%;
 }
 
 .grid{
@@ -81,11 +80,11 @@ article{
 }
 
 article.large{
-    grid-column: span 3;
+    grid-column: span 6;
 }
 
 article.medium{
-    grid-column: span 6;
+    grid-column: span 3;
 }
 
 article.small{
