@@ -81,6 +81,7 @@ article{
     background-color: white;
     grid-column: span 3;
     cursor: pointer;
+    overflow-wrap: break-word;
 }
 
 article.large{
@@ -97,6 +98,10 @@ article.small{
 
 h1{
     font-size: 70px;
+}
+
+h2{
+    font-size: 45px;
 }
 
 h3{
