@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Archivo+Black&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Arimo:ital,wght@0,400..700;1,400..700&family=Boldonse&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 html {
     box-sizing: border-box;
     font-size: 16px;
-    font-family: "Archivo Black";
+    font-family: "Roboto Flex";
 }
 
 *,
@@ -32,26 +32,29 @@ ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--tekst-svart);
 }
 
-:root{
-    --bakgrunn-mork:#0d0221;
-    --bakgrunn-lys:	#faf0e6;
-    --logofarge:#1C5D99;
-    --lyseblaa:#B8D0Eb;
-    --tekst-hvit:white;
-    --tekst-svart:black;
+:root {
+    --bakgrunn-mork: #0d0221;
+    --bakgrunn-lys: #e4e4e4;
+    --logofarge: #1C5D99;
+    --lyseblaa: #B8D0Eb;
+    --tekst-hvit: white;
+    --tekst-svart: black;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
 }
 
-body{
+#logoImg{
+    height: 80px;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,29 +62,53 @@ body{
     background-color: var(--bakgrunn-lys);
 }
 
-header{
+header {
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 60px;
-    background-color: white;
+    background-color:var(--bakgrunn-lys);
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+header div{
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
+    width: 40%;
 }
 
-main{
+
+input{
+    width: 200px;
+    height: 35px;
+    border: none;
+    outline: none;
+}
+#search{
+    background-color: white;
+    padding: 5px 0px 5px 10px;
+    width: fit-content;
+}   
+#search i{
+    padding: 5px;
+}
+
+main {
     display: grid;
     margin: auto;
-    width: 75%;
+    width: 70%;
     margin-top: 40px;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
 }
 
-article{
+article {
     min-height: 400px;
     background-color: white;
     grid-column: span 3;
@@ -89,32 +116,43 @@ article{
     overflow-wrap: break-word;
 }
 
-article.large{
+article.large {
     grid-column: span 6;
 }
 
-article.medium{
+article.medium {
     grid-column: span 3;
 }
 
-article.small{
+article.small {
     grid-column: span 2;
 }
 
-h1{
-    font-size: 70px;
+h1 {
+    font-size: 2vw;
+    font-weight: 500;
 }
 
-h2{
+h2 {
     font-size: 45px;
 }
 
-h3{
+h3 {
     font-size: 25px;
     color: gray;
 }
 
-.tekst{
+.tekst {
     padding: 15px;
 }
 
+
+@media(width < 600px){
+    h1{
+        font-size: 1rem;
+    }
+    main {
+        width: 95%;
+    }
+
+}
