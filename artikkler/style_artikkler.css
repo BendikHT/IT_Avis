@@ -75,6 +75,9 @@ h2{
     font-weight: 600;
 }
 
+h3{
+    margin: auto;
+}
 
 footer{
     display: flex;
@@ -109,5 +112,7 @@ footer div p{
     font-size: 15px;
     font-weight: 800;
 }
+
+
 
 
