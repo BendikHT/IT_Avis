@@ -5,3 +5,7 @@ document.addEventListener("click", function (event) {
         window.open(`artikkler/${article.id}.html`, "_self");
     }
 });
+
+function lesMer(){
+    
+}
