@@ -163,6 +163,19 @@ h3 {
     padding: 15px;
 }
 
+footer{
+    display: flex;
+    flex-direction: row;
+
+}
+
+footer>div{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
 footer div img{
     width: fit-content;
     height: 100px;
