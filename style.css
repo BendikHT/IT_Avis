@@ -82,7 +82,7 @@ header {
     width: 40%;
 }
 #header-start{
-    padding: 5px;
+    padding-left: 15px;
 }
 
 input{
@@ -162,6 +162,7 @@ h3 {
 .tekst {
     padding: 15px;
 }
+
 
 footer div img{
     width: fit-content;
