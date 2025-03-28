@@ -163,6 +163,26 @@ h3 {
     padding: 15px;
 }
 
+footer div img{
+    width: fit-content;
+    height: 100px;
+}
+
+footer div p{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+footer div img{
+    width: fit-content;
+    height: 100px;
+}
+
+footer div p{
+    font-size: 15px;
+    font-weight: 800;
+}
+
 @media (width < 800px) {
     
 }
