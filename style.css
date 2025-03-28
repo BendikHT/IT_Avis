@@ -78,6 +78,7 @@ header {
 }
 #header-start{
     padding-left: 15px;
+    width: fit-content;
 }
 
 input{
@@ -204,5 +205,9 @@ footer div p{
 
     #header-slutt{
         width: 80%;
+    }
+
+    input{
+        width: 60%;
     }
 }
