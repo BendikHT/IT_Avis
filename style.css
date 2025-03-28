@@ -133,6 +133,10 @@ h1 {
     font-weight: 700;
 }
 
+article.medium h1 , article.small h1{
+    font-size: 4vw;
+}
+
 h2 {
     font-size: 45px;
 }
