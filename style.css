@@ -197,9 +197,6 @@ footer div p{
     font-weight: 800;
 }
 
-@media (width < 800px) {
-    
-}
 
 @media screen and (width < 600px) {
     main {
@@ -208,5 +205,9 @@ footer div p{
 
     article{
         min-height: 200px;
+    }
+
+    #header-slutt{
+        width: 80%;
     }
 }
