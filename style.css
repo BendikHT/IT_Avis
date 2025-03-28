@@ -129,8 +129,8 @@ article.small {
 }
 
 h1 {
-    font-size: 2vw;
-    font-weight: 500;
+    font-size: 6vw;
+    font-weight: 700;
 }
 
 h2 {
@@ -148,9 +148,7 @@ h3 {
 
 
 @media(width < 600px){
-    h1{
-        font-size: 1rem;
-    }
+
     main {
         width: 95%;
     }
