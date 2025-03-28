@@ -78,6 +78,7 @@ header {
 }
 #header-start{
     padding-left: 15px;
+    width: fit-content;
 }
 
 input{
@@ -192,9 +193,6 @@ footer div p{
     font-weight: 800;
 }
 
-@media (width < 800px) {
-    
-}
 
 @media screen and (width < 600px) {
     main {
@@ -203,5 +201,13 @@ footer div p{
 
     article{
         min-height: 200px;
+    }
+
+    #header-slutt{
+        width: 80%;
+    }
+
+    input{
+        width: 60%;
     }
 }
