@@ -82,7 +82,7 @@ header {
     width: 40%;
 }
 #header-start{
-    padding: 5px;
+    padding-left: 15px;
 }
 
 input{
@@ -161,6 +161,20 @@ h3 {
 
 .tekst {
     padding: 15px;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+
+}
+
+footer>div{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 footer div img{
