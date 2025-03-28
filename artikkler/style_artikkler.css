@@ -75,5 +75,44 @@ h2{
     font-weight: 600;
 }
 
+h3{
+    margin: auto;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    width: 60%;
+}
+
+footer>div{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+footer div img{
+    width: fit-content;
+    height: 100px;
+}
+
+footer div p{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+footer div img{
+    width: fit-content;
+    height: 100px;
+}
+
+footer div p{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
 
 

@@ -6,6 +6,4 @@ document.addEventListener("click", function (event) {
     }
 });
 
-function lesMer(){
-    
-}
+
