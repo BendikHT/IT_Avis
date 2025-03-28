@@ -153,11 +153,23 @@ h3 {
     padding: 15px;
 }
 
+footer div img{
+    width: fit-content;
+    height: 100px;
+}
 
-@media screen and (width < 700px) {
+footer div p{
+    font-size: 15px;
+    font-weight: 800;
+}
 
+
+@media screen and (width < 600px) {
     main {
         width: 95%;
     }
 
+    article{
+        min-height: 200px;
+    }
 }
