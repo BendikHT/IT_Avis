@@ -163,7 +163,8 @@ h3 {
 footer{
     display: flex;
     flex-direction: row;
-
+    overflow-y: scroll;
+    width: 60%;
 }
 
 footer>div{
@@ -192,6 +193,7 @@ footer div p{
     font-size: 15px;
     font-weight: 800;
 }
+
 
 
 @media screen and (width < 600px) {
