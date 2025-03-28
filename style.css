@@ -70,25 +70,35 @@ header {
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
     z-index: 10;
 }
-header div{
+#header-slutt{
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 40%;
 }
-
+#header-start{
+    padding-left: 15px;
+}
 
 input{
-    width: 200px;
-    height: 35px;
+    width: 95%;
+    height: 40px;
     border: none;
     outline: none;
+    
 }
 #search{
+    display: flex;
+    justify-content:start;   
     background-color: white;
     padding: 5px 0px 5px 10px;
-    width: fit-content;
+    width: 60%;
 }   
+
+i{
+    font-size: 20px;
+}
+
 #search i{
     padding: 5px;
 }
@@ -149,10 +159,49 @@ h3 {
 }
 
 
-@media screen and (width < 700px) {
+footer{
+    display: flex;
+    flex-direction: row;
 
+}
+
+footer>div{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+footer div img{
+    width: fit-content;
+    height: 100px;
+}
+
+footer div p{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+footer div img{
+    width: fit-content;
+    height: 100px;
+}
+
+footer div p{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+@media (width < 800px) {
+    
+}
+
+@media screen and (width < 600px) {
     main {
         width: 95%;
     }
 
+    article{
+        min-height: 200px;
+    }
 }
