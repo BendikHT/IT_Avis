@@ -12,6 +12,7 @@
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="icon" href="logo/favicon-32x32.png" type="image/x-icon">
+        <link rel="stylesheet" href="search.css">
     </head>
 
 <body>
@@ -30,40 +31,9 @@
             <i class="fa-solid fa-bars" id="dropdown"></i>
         </div>
     </header>
-    <h1 id="resultat-tekst"></h1>
-    <script>
-        const input = document.getElementById("search-bar");
-        const resultat_tekst = document.getElementById("resultat-tekst");
-        const articles = [
-            { title: "Chat Bedring", url: "artikkler/chat-bedring.html" },
-            { title: "Chat Klager", url: "artikkler/chat-klager.html" },
-            { title: "EU Slå Tilbake", url: "artikkler/eu_slaa_tilbake.html" },
-            { title: "Google Gemini", url: "artikkler/google-gemini.html" },
-            { title: "Hong Kong 1", url: "artikkler/hongkong1.html" },
-            { title: "Repo", url: "artikkler/repo.html" },
-            { title: "Russisk Hackere", url: "artikkler/russik-hackere.html" }
-        ];
-
-        input.addEventListener("keydown", function (event) {
-            if (event.key === "Enter") {
-                localStorage.setItem("search", input.value);
-                window.open("search.html", "_self");
-            }
-        });
-        function sok() {
-            const user_search = localStorage.getItem("search").toLowerCase();
-            resultat_tekst.innerHTML = "du søkte etter " + user_search;
-            articles.forEach(article =>{
-                if (article.title.toLocaleLowerCase().includes(user_search)) {
-                    const articleElm = document.createElement("div");
-                    articleElm.innerHTML = `<a href="${article.url}">${article.title}</a>`;
-                    document.body.appendChild(articleElement);
-                }
-            })
-        }
-        sok();
-
-    </script>
+    <h2 id="resultat-tekst"></h2>
+    <script src="script.js"></script>
+        
 
 </body>
 
