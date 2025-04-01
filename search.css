@@ -13,5 +13,10 @@ article{
     grid-column: span 1;
     overflow-wrap: break-word;
     background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+article:hover{
+    background-color: #ffffff;
 }
 
