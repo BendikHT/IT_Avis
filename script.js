@@ -33,7 +33,7 @@ function sok() {
         if (article.title.toLocaleLowerCase().includes(user_search)) {
             const articleElm = document.createElement("div");
             articleElm.innerHTML = `<a href="${article.url}">${article.title}</a>`;
-            document.body.appendChild(articleElm);
+            document.querySelector("main").appendChild(articleElm);  
             search_result_number++;
         }
     })
@@ -42,5 +42,5 @@ function sok() {
     } else
         resultat_tekst.innerHTML = `Ditt søk på ${user_search} ga: ${search_result_number} treff`;
 }
-
+    
 sok();
