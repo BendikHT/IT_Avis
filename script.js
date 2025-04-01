@@ -7,6 +7,11 @@ document.addEventListener("click", function (event) {
     }
 });
 
+document.addEventListener("click", function (event) {
+    console.log(article.id);
+    window.open(`artikkler/${article.id}.html`, "_self");
+});
+
 const input = document.getElementById("search-bar");
 const resultat_tekst = document.getElementById("resultat-tekst");
 const articles = [
@@ -31,9 +36,10 @@ function sok() {
 
     articles.forEach(article => {
         if (article.title.toLocaleLowerCase().includes(user_search)) {
-            const articleElm = document.createElement("div");
-            articleElm.innerHTML = `<a href="${article.url}">${article.title}</a>`;
-            document.querySelector("main").appendChild(articleElm);  
+            const articleElm = document.createElement("article");
+            articleElm.id = article.url.replace("artikkler/", "").replace(".html", "");
+            articleElm.innerHTML = `<h2">${article.title}</h2>`;
+            document.querySelector("main").appendChild(articleElm);
             search_result_number++;
         }
     })
@@ -42,5 +48,5 @@ function sok() {
     } else
         resultat_tekst.innerHTML = `Ditt søk på ${user_search} ga: ${search_result_number} treff`;
 }
-    
+
 sok();
