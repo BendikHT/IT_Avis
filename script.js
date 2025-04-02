@@ -49,3 +49,30 @@ sok();
 
 function dropdown() {
 }
+
+const modeToggle = document.getElementById("mork");
+const body = document.body;
+
+function toggleDarkMode(){
+    const isDarkMode = body.classList.toggle("dark-mode");
+    localStorage.setItem("darkMode", isDarkMode);
+    updateIcon();
+}
+
+function updateIcon(){
+    if (body.classList.contains("dark-mode")) {
+        modeToggle.classList.remove("fa-sun");
+        modeToggle.classList.add("fa-moon");
+    } 
+    else {
+        modeToggle.classList.remove("fa-moon");
+        modeToggle.classList.add("fa-sun");
+    }
+}
+
+if (localStorage.getItem("darkMode") === "true") {
+    body.classList.add("dark-mode");
+}
+updateIcon();
+
+modeToggle.addEventListener("click", toggleDarkMode);
