@@ -1,0 +1,22 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 100px;
+    gap: 10px;
+}
+article{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    min-height: 100px;
+    cursor: pointer;
+    grid-column: span 1;
+    overflow-wrap: break-word;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+article:hover{
+    background-color: #ffffff;
+}
+
