@@ -15,13 +15,13 @@ document.addEventListener("click", function (event) {
 const input = document.getElementById("search-bar");
 const resultat_tekst = document.getElementById("resultat-tekst");
 const articles = [
-    { title: "Chat Bedring", url: "artikkler/chat-bedring.html" },
-    { title: "Chat Klager", url: "artikkler/chat-klager.html" },
-    { title: "EU Slå Tilbake", url: "artikkler/eu_slaa_tilbake.html" },
-    { title: "Google Gemini", url: "artikkler/google-gemini.html" },
-    { title: "Hong Kong 1", url: "artikkler/hongkong1.html" },
-    { title: "Repo", url: "artikkler/repo.html" },
-    { title: "Russisk Hackere", url: "artikkler/russik-hackere.html" }
+    { title: "ChatGPT får bedre stemme - skal avbryte deg mindre.", url: "artikkler/chat-bedring.html" },
+    { title: "Nordmann klager inn OpenAI: ChatGPT påsto han hadde drept sine egne barn", url: "artikkler/chat-klager.html" },
+    { title: "Analytiker: - EU må slå tilbake mot tekgigantene.", url: "artikkler/eu_slaa_tilbake.html" },
+    { title: "Googles Gemini kan nå se alt du gjør på skjermen din.", url: "artikkler/google-gemini.html" },
+    { title: "InnoEX/EFSE 2025: Fremtidens teknologi i Honkong", url: "artikkler/hongkong1.html" },
+    { title: "«R.E.P.O» er den nyeste virale spillhitten", url: "artikkler/repo.html" },
+    { title: "Russisk Unit 29155 angriper NATO og allierte nasjoner.", url: "artikkler/russik-hackere.html" }
 ];
 let search_result_number = 0;
 
