@@ -32,10 +32,10 @@ input.addEventListener("keydown", function (event) {
     }
 });
 function sok() {
-    const user_search = localStorage.getItem("search").toLowerCase();
+    const user_search = localStorage.getItem("search");
 
     articles.forEach(article => {
-        if (article.title.toLocaleLowerCase().includes(user_search)) {
+        if (article.title.toLocaleLowerCase().includes(user_search.toLowerCase())) {
             const articleElm = document.createElement("article");
             articleElm.id = article.url.replace("artikkler/", "").replace(".html", "");
             articleElm.innerHTML = `<h2">${article.title}</h2>`;
