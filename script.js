@@ -2,12 +2,9 @@
 document.addEventListener("click", function (event) {
     let article = event.target.closest("article");
     if (article) {
-        if (console.error(article.id)) {
-            return
-        } else {
-            console.log(article.id);
-            window.open(`artikkler/${article.id}.html`, "_self");
-        }
+        console.log(article.id);
+        window.open(`artikkler/${article.id}.html`, "_self");
+
     }
 });
 
