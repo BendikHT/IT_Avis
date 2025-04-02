@@ -7,10 +7,6 @@ document.addEventListener("click", function (event) {
     }
 });
 
-document.addEventListener("click", function (event) {
-    console.log(article.id);
-    window.open(`artikkler/${article.id}.html`, "_self");
-});
 
 const input = document.getElementById("search-bar");
 const resultat_tekst = document.getElementById("resultat-tekst");
