@@ -117,6 +117,10 @@ footer  p{
     margin: auto;
 }
 
+#hovedbilde{
+    margin: 20px 0
+}
+
 
 @media screen and (width < 600px) {
     main {
