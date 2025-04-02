@@ -7,10 +7,6 @@ document.addEventListener("click", function (event) {
     }
 });
 
-document.addEventListener("click", function (event) {
-    console.log(article.id);
-    window.open(`artikkler/${article.id}.html`, "_self");
-});
 
 const input = document.getElementById("search-bar");
 const resultat_tekst = document.getElementById("resultat-tekst");
@@ -51,30 +47,32 @@ function sok() {
 
 sok();
 
-const mork = document.getElementById("mork")
-const lysmorkSpan = document.getElementById("lysmork")
+function dropdown() {
+}
 
-const navElm = document.querySelectorAll("nav > *")
+const modeToggle = document.getElementById("mork");
+const body = document.body;
 
-console.log(navElm)
+function toggleDarkMode(){
+    const isDarkMode = body.classList.toggle("dark-mode");
+    localStorage.setItem("darkMode", isDarkMode);
+    updateIcon();
+}
 
-mork.addEventListener("click", skiftMorkLys)
-
-let morkTheme = false
-
-function skiftMorkLys(){
-    console.log("Trykket på knapp")
-
-    if (morkTheme) {
-        console.log("Skift til lys")
-        morkTheme = false
-        document.getElementById("lysmork").innerText = "mork"; 
-        document.body.className = "lys"
-    }
+function updateIcon(){
+    if (body.classList.contains("dark-mode")) {
+        modeToggle.classList.remove("fa-sun");
+        modeToggle.classList.add("fa-moon");
+    } 
     else {
-        console.log("Skift til mørk")
-        morkTheme = true
-        document.getElementById("lysmork").innerText = "lys"; 
-        document.body.className = "mork"
+        modeToggle.classList.remove("fa-moon");
+        modeToggle.classList.add("fa-sun");
     }
 }
+
+if (localStorage.getItem("darkMode") === "true") {
+    body.classList.add("dark-mode");
+}
+updateIcon();
+
+modeToggle.addEventListener("click", toggleDarkMode);
