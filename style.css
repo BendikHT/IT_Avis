@@ -40,6 +40,8 @@ a {
     --lyseblaa: #B8D0Eb;
     --tekst-hvit: white;
     --tekst-svart: black;
+    --alice-blue: #EFF4FB;
+    --nav-bar-mork: #142C3E;
 }
 
 img {
@@ -162,6 +164,15 @@ h2 {
 .liste {
     margin-left: 44px;
     margin-bottom: 6px;
+}
+
+.dark-mode{
+    background-color: var(--bakgrunn-mork);
+    color: var(--tekst-hvit);
+}
+
+.dark-mode header {
+    background-color: var(--lyseblaa);
 }
 
 #dropdown-content {
