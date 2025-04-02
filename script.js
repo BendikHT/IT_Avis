@@ -39,7 +39,7 @@ function sok() {
             const articleElm = document.createElement("article");
             articleElm.id = article.url.replace("artikkler/", "").replace(".html", "");
             articleElm.innerHTML = `<h2">${article.title}</h2>`;
-            document.querySelector("main").appendChild(articleElm);
+            document.getElementById("search_main").appendChild(articleElm);
             search_result_number++;
         }
     })
