@@ -106,6 +106,18 @@ footer  p{
     font-weight: 800;
 }
 
+#tekst{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#iphone{
+    width:50%;
+    margin: auto;
+}
+
+
 @media screen and (width < 600px) {
     main {
         width: 95%;
