@@ -46,31 +46,3 @@ function sok() {
 }
 
 sok();
-
-const mork = document.getElementById("mork")
-const lysmorkSpan = document.getElementById("lysmork")
-
-const navElm = document.querySelectorAll("nav > *")
-
-console.log(navElm)
-
-mork.addEventListener("click", skiftMorkLys)
-
-let morkTheme = false
-
-function skiftMorkLys() {
-    console.log("Trykket på knapp")
-
-    if (morkTheme) {
-        console.log("Skift til lys")
-        morkTheme = false
-        document.getElementById("lysmork").innerText = "mork";
-        document.body.className = "lys"
-    }
-    else {
-        console.log("Skift til mørk")
-        morkTheme = true
-        document.getElementById("lysmork").innerText = "lys";
-        document.body.className = "mork"
-    }
-}
