@@ -4,6 +4,7 @@ document.addEventListener("click", function (event) {
     if (article) {
         console.log(article.id);
         window.open(`artikkler/${article.id}.html`, "_self");
+
     }
 });
 
@@ -58,19 +59,19 @@ mork.addEventListener("click", skiftMorkLys)
 
 let morkTheme = false
 
-function skiftMorkLys(){
+function skiftMorkLys() {
     console.log("Trykket på knapp")
 
     if (morkTheme) {
         console.log("Skift til lys")
         morkTheme = false
-        document.getElementById("lysmork").innerText = "mork"; 
+        document.getElementById("lysmork").innerText = "mork";
         document.body.className = "lys"
     }
     else {
         console.log("Skift til mørk")
         morkTheme = true
-        document.getElementById("lysmork").innerText = "lys"; 
+        document.getElementById("lysmork").innerText = "lys";
         document.body.className = "mork"
     }
 }
