@@ -46,3 +46,6 @@ function sok() {
 }
 
 sok();
+
+function dropdown() {
+}
