@@ -35,7 +35,7 @@ a {
 
 :root {
     --bakgrunn-mork: #0d0221;
-    --bakgrunn-lys: #e4e4e4;
+    --bakgrunn-lys: #EFF4FB;
     --logofarge: #1C5D99;
     --lyseblaa: #B8D0Eb;
     --tekst-hvit: white;
@@ -66,7 +66,7 @@ header {
     position: sticky;
     top: 0;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
-    z-index: 10;
+    z-index: 20;
 }
 
 #header-slutt {
@@ -170,6 +170,49 @@ h2 {
     background-color: var(--lyseblaa);
 }
 
+#dropdown-content {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    background-color: var(--bakgrunn-lys);
+    height: 100vh;
+    top: 0;
+    right: 0;
+    width: 30%;
+    padding-top: 90px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    overflow-y: scroll;
+}
+#dropdown-content::-webkit-scrollbar {
+    width: 0px;
+    background: transparent
+}
+#dropdown-content-valgt{
+    width: 0px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    margin: 4px;
+}
+#dropdown-content-tekst{
+    display: flex;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--tekst-svart);
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+}
+
+#dropdown-content-tekst:hover #dropdown-content-valgt{
+    width: 5px;
+    height: 20px;
+
+    border-radius: 20px;
+}
 @media screen and (width < 600px) {
     main {
         width: 95%;
