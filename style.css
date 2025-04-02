@@ -89,7 +89,6 @@ input {
     height: 40px;
     border: none;
     outline: none;
-
 }
 
 #search {
@@ -98,6 +97,7 @@ input {
     background-color: white;
     padding: 5px 0px 5px 10px;
     width: 60%;
+    align-items: center;
 }
 
 i {

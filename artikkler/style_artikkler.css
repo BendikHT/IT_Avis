@@ -89,12 +89,13 @@ footer{
     overflow-x: scroll;
 }
 
-.karusell>div{
+footer div a {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
     margin: 10px;
 }
+
 
 footer img{
     width: fit-content;

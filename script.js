@@ -32,10 +32,10 @@ input.addEventListener("keydown", function (event) {
     }
 });
 function sok() {
-    const user_search = localStorage.getItem("search").toLowerCase();
+    const user_search = localStorage.getItem("search");
 
     articles.forEach(article => {
-        if (article.title.toLocaleLowerCase().includes(user_search)) {
+        if (article.title.toLocaleLowerCase().includes(user_search.toLowerCase())) {
             const articleElm = document.createElement("article");
             articleElm.id = article.url.replace("artikkler/", "").replace(".html", "");
             articleElm.innerHTML = `<h2">${article.title}</h2>`;
@@ -50,3 +50,31 @@ function sok() {
 }
 
 sok();
+
+const mork = document.getElementById("mork")
+const lysmorkSpan = document.getElementById("lysmork")
+
+const navElm = document.querySelectorAll("nav > *")
+
+console.log(navElm)
+
+mork.addEventListener("click", skiftMorkLys)
+
+let morkTheme = false
+
+function skiftMorkLys(){
+    console.log("Trykket på knapp")
+
+    if (morkTheme) {
+        console.log("Skift til lys")
+        morkTheme = false
+        document.getElementById("lysmork").innerText = "mork"; 
+        document.body.className = "lys"
+    }
+    else {
+        console.log("Skift til mørk")
+        morkTheme = true
+        document.getElementById("lysmork").innerText = "lys"; 
+        document.body.className = "mork"
+    }
+}
