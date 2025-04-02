@@ -4,7 +4,6 @@ document.addEventListener("click", function (event) {
     if (article) {
         console.log(article.id);
         window.open(`artikkler/${article.id}.html`, "_self");
-
     }
 });
 
