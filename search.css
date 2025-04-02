@@ -1,3 +1,7 @@
+h2{
+    margin-top: 20px;
+}
+
 main{
     display: grid;
     grid-template-columns: 1fr;
