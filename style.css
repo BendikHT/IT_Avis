@@ -162,7 +162,7 @@ h2 {
     margin-bottom: 6px;
 }
 
-.dark-mode{
+.dark-mode {
     background-color: var(--bakgrunn-mork);
     color: var(--tekst-hvit);
 }
@@ -186,14 +186,17 @@ h2 {
     overflow-y: scroll;
     transition: right 0.4s ease;
 }
-.dropdown-content-show{
-    right:0 !important;
+
+.dropdown-content-show {
+    right: 0 !important;
 }
+
 #dropdown-content::-webkit-scrollbar {
     width: 0px;
     background: transparent
 }
-#dropdown-content-valgt{
+
+#dropdown-content-valgt {
     width: 0px;
     height: 20px;
     background-color: transparent;
@@ -201,7 +204,8 @@ h2 {
     transition: all 0.4s ease;
     margin: 4px;
 }
-#dropdown-content-tekst{
+
+#dropdown-content-tekst {
     display: flex;
     padding: 10px 20px;
     font-size: 25px;
@@ -212,12 +216,13 @@ h2 {
     align-items: center;
 }
 
-#dropdown-content-tekst:hover #dropdown-content-valgt{
+#dropdown-content-tekst:hover #dropdown-content-valgt {
     width: 5px;
     height: 20px;
     background-color: var(--logofarge);
     border-radius: 20px;
 }
+
 @media screen and (width < 600px) {
     main {
         width: 95%;

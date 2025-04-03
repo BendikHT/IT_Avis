@@ -1,40 +1,39 @@
-
-
-#overskrift{
+#overskrift {
     font-weight: 1000;
     font-size: 35px;
 }
 
-#underoverskrift{
+#underoverskrift {
     font-weight: 700;
     font-size: 20px;
     margin: 20px 0 5px 0;
-    
+
 }
 
-#overskrift, h2{
-    width:80%;
+#overskrift,
+h2 {
+    width: 80%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h2{
+h2 {
     margin: 20px 0;
     font-size: 25px;
 }
 
-#bildetekst{
+#bildetekst {
     color: #3D3329;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#portrett{
+#portrett {
     width: 50px;
     height: 50px;
     border-radius: 50px;
 }
 
-#info{
+#info {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     width: 100%;
@@ -46,12 +45,9 @@ h2{
     flex-direction: row;
     align-items: center;
     gap: 5px
-    
 }
 
-
-
-#tekst{
+#tekst {
     width: 65%;
     margin: auto;
     line-height: 30px;
@@ -59,23 +55,24 @@ h2{
     font-size: larger;
 }
 
-#tekst > p{
+#tekst>p {
     margin-bottom: 20px;
 }
 
-#tykk{
+#tykk {
     font-weight: 600;
 }
 
-h3{
+h3 {
     margin: auto;
 }
 
-footer{
+footer {
     width: 60%;
+    margin: auto;
 }
 
-.karusell{
+.karusell {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
@@ -88,36 +85,33 @@ footer div a {
     margin: 10px;
 }
 
-
-footer img{
+footer img {
     width: fit-content;
     height: 100px;
 }
 
-footer  p{
+footer p {
     font-size: 15px;
     font-weight: 800;
 }
 
-#iphone{
-    width:50%;
+#iphone {
+    width: 50%;
     margin: auto;
 }
 
-#hovedbilde{
+#hovedbilde {
     margin: 20px 0
 }
-
 
 @media screen and (width < 600px) {
     main {
         width: 95%;
     }
 
-    #tekst, #overskrift, h2{
+    #tekst,
+    #overskrift,
+    h2 {
         width: 100%;
     }
 }
-
-
-
