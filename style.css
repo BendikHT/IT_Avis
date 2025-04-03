@@ -99,6 +99,7 @@ input {
 
 i {
     font-size: 20px;
+    cursor: pointer;
 }
 
 #search i {
@@ -177,12 +178,16 @@ h2 {
     background-color: var(--bakgrunn-lys);
     height: 100vh;
     top: 0;
-    right: 0;
-    width: 30%;
+    right: -350px;
+    width: 350px;
     padding-top: 90px;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
     flex-direction: column;
     overflow-y: scroll;
+    transition: right 0.4s ease;
+}
+.dropdown-content-show{
+    right:0 !important;
 }
 #dropdown-content::-webkit-scrollbar {
     width: 0px;
@@ -193,7 +198,7 @@ h2 {
     height: 20px;
     background-color: transparent;
     border-radius: 20px;
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
     margin: 4px;
 }
 #dropdown-content-tekst{
@@ -210,7 +215,7 @@ h2 {
 #dropdown-content-tekst:hover #dropdown-content-valgt{
     width: 5px;
     height: 20px;
-
+    background-color: var(--logofarge);
     border-radius: 20px;
 }
 @media screen and (width < 600px) {

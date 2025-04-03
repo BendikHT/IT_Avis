@@ -19,6 +19,7 @@ const articles = [
     { title: "«R.E.P.O» er den nyeste virale spillhitten", url: "artikkler/repo.html" },
     { title: "Russisk Unit 29155 angriper NATO og allierte nasjoner.", url: "artikkler/russik-hackere.html" }
 ];
+const dropdown_content = document.getElementById("dropdown-content")
 let search_result_number = 0;
 
 input.addEventListener("keydown", function (event) {
@@ -48,4 +49,5 @@ function sok() {
 sok();
 
 function dropdown() {
+    dropdown_content.classList.toggle("dropdown-content-show");
 }
