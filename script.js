@@ -60,7 +60,7 @@ function theme(){
     const article = document.querySelectorAll("article");
     const search = document.querySelector("#search");
     const input = document.querySelector("input");
-
+    const theme_icon = document.getElementById("theme_icon");
 
     body.classList.toggle("dark-mode");
     main.classList.toggle("dark-mode");
@@ -71,4 +71,9 @@ function theme(){
     search.classList.toggle("dark-mode-searchbar");
     input.classList.toggle("dark-mode-searchbar");
     dropdown_content.classList.toggle("dark-mode");
+    if (body.classList.contains("dark-mode")) {
+        theme_icon.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+    } else {
+        theme_icon.innerHTML = `<i class="fa-regular fa-sun"></i>`;
+    }
 }
