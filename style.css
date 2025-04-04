@@ -164,21 +164,21 @@ h2 {
 }
 
 .dark-mode {
-    background-color: var(--bakgrunn-mork);
-    color: var(--tekst-hvit);
+    background-color: var(--bakgrunn-mork) !important;
+    color: var(--tekst-hvit) !important;
 }
 
 .dark-mode-header {
-    background-color: var(--nav-bar-mork);
+    background-color: var(--nav-bar-mork) !important;
 }
 
 .dark-mode-searchbar{
-    background-color: var(--searchbar-mork);
+    background-color: var(--searchbar-mork) !important;
     color: var(--tekst-hvit);
 }
 
 .dark-mode-article{
-    background-color: var(--bakgrunn-artikler);
+    background-color: var(--bakgrunn-artikler)!important;
     color: var(--tekst-hvit);
 }
 
