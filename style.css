@@ -163,11 +163,11 @@ h2 {
     margin-bottom: 6px;
 }
 
-.dark-mode {
+.dark-mode, .dark-mode .dropdown-content-show {
     background-color: var(--bakgrunn-mork) !important;
     color: var(--tekst-hvit) !important;
 }
-.dark-mode p {
+.dark-mode p, .dark-mode .dropdown-content-tekst{
     color: var(--tekst-hvit) !important;
 }
 
@@ -219,7 +219,7 @@ h2 {
     margin: 4px;
 }
 
-#dropdown-content-tekst {
+.dropdown-content-tekst {
     display: flex;
     padding: 10px 20px;
     font-size: 25px;
