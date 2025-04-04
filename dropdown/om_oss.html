@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Om oss </title>
-</head>
-<body>
+    <title>Om oss | Tek News</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style_artikkler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../logo/favicon-32x32.png" type="image/x-icon">
 
-    
-    
+
+</head>
+
+<body>
+    <header>
+        <div id="header-start">
+            <a href="../index.html"><img src="../logo/logo-tekst.svg" alt="" id="logoImg"></a>
+        </div>
+        <div id="header-slutt">
+            <div id="search">
+                <i class="fa-solid fa-magnifying-glass"> </i>
+                <input type="text" id="search-bar" placeholder="Søk">
+            </div>
+            <i class="fa-regular fa-sun"></i>
+
+            <i class="fa-solid fa-bars" id="dropdown" onclick="dropdown()"></i>
+        </div>
+        
+    </header>
+    <div id="dropdown-content">
+        <a href="../index.html" id="dropdown-content-tekst"><div id="dropdown-content-valgt"></div>Hjem</a>
+        <div id="dropdown-content-tekst"><div id="dropdown-content-valgt"></div>Nyheter
+
+        </div>
+        <a href="../spill.html" id="dropdown-content-tekst"><div id="dropdown-content-valgt"></div>Spill</a>
+        <span id="dropdown-content-tekst"><div id="dropdown-content-valgt"></div>Om Oss</span>
+    </div>
+    <script src="../script.js"></script>
 </body>
 </html>
