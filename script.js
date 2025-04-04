@@ -58,6 +58,8 @@ function theme(){
     const main = document.querySelector("main");
     const header = document.querySelector("header");
     const article = document.querySelectorAll("article");
+    const search = document.querySelector("#search");
+    const input = document.querySelector("input");
 
     body.classList.toggle("dark-mode");
     main.classList.toggle("dark-mode");
@@ -65,4 +67,6 @@ function theme(){
     article.forEach((element) => {
         element.classList.toggle("dark-mode-article");
     });
+    search.classList.toggle("dark-mode-searchbar");
+    input.classList.toggle("dark-mode-searchbar");
 }
