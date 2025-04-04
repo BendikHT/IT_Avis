@@ -237,6 +237,10 @@ h2 {
     border-radius: 20px;
 }
 
+.om-oss > div{
+    margin: 2px solid black;
+}
+
 @media (width < 930px) {
     main {
         width: 97%;
