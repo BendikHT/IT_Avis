@@ -61,6 +61,7 @@ function theme(){
     const search = document.querySelector("#search");
     const input = document.querySelector("input");
 
+
     body.classList.toggle("dark-mode");
     main.classList.toggle("dark-mode");
     header.classList.toggle("dark-mode-header");
@@ -69,4 +70,5 @@ function theme(){
     });
     search.classList.toggle("dark-mode-searchbar");
     input.classList.toggle("dark-mode-searchbar");
+    dropdown_content.classList.toggle("dark-mode");
 }
