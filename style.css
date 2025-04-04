@@ -42,6 +42,8 @@ a {
     --tekst-svart: black;
     --alice-blue: #EFF4FB;
     --nav-bar-mork: #142C3E;
+    --searchbar-mork: #323649;
+    --bakgrunn-artikler: #292D3D;
 }
 
 img {
@@ -166,9 +168,20 @@ h2 {
     color: var(--tekst-hvit);
 }
 
-.dark-mode header {
-    background-color: var(--lyseblaa);
+.dark-mode-header {
+    background-color: var(--nav-bar-mork);
 }
+
+.darkmode-searchbar{
+    background-color: var(--searchbar-mork);
+    color: var(--tekst-hvit);
+}
+
+.darkmode-article{
+    background-color: var(--bakgrunn-artikler);
+    color: var(--tekst-hvit);
+}
+
 
 #dropdown-content {
     display: flex;
