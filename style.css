@@ -172,12 +172,12 @@ h2 {
     background-color: var(--nav-bar-mork);
 }
 
-.darkmode-searchbar{
+.dark-mode-searchbar{
     background-color: var(--searchbar-mork);
     color: var(--tekst-hvit);
 }
 
-.darkmode-article{
+.dark-mode-article{
     background-color: var(--bakgrunn-artikler);
     color: var(--tekst-hvit);
 }
