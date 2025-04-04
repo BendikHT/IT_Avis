@@ -167,17 +167,20 @@ h2 {
     background-color: var(--bakgrunn-mork) !important;
     color: var(--tekst-hvit) !important;
 }
+.dark-mode p {
+    color: var(--tekst-hvit) !important;
+}
 
-.dark-mode-header {
+.dark-mode header {
     background-color: var(--nav-bar-mork) !important;
 }
 
-.dark-mode-searchbar{
+.dark-mode #search, .dark-mode #search input {
     background-color: var(--searchbar-mork) !important;
     color: var(--tekst-hvit);
 }
 
-.dark-mode-article{
+.dark-mode article{
     background-color: var(--bakgrunn-artikler)!important;
     color: var(--tekst-hvit);
 }
