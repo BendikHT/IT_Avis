@@ -173,7 +173,7 @@ h2 {
 }
 
 .dark-mode-searchbar{
-    background-color: var(--searchbar-mork);
+    background-color: var(--searchbar-mork) !important;
     color: var(--tekst-hvit);
 }
 
