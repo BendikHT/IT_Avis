@@ -7,7 +7,7 @@ document.addEventListener("click", function (event) {
     }
 });
 
-
+localStorage.setItem("theme", "light-mode");
 const input = document.getElementById("search-bar");
 const resultat_tekst = document.getElementById("resultat-tekst");
 const articles = [
@@ -55,8 +55,8 @@ function dropdown() {
 
 function theme(){
     const theme_icon = document.getElementById("theme_icon");    
-
     document.body.classList.toggle("dark-mode");
+    
     if (document.body.classList.contains("dark-mode")) {
         theme_icon.innerHTML = `<i class="fa-solid fa-moon"></i>`;
         localStorage.setItem("theme", "dark-mode");
@@ -64,4 +64,19 @@ function theme(){
         theme_icon.innerHTML = `<i class="fa-regular fa-sun"></i>`;
         localStorage.setItem("theme", "light-mode");
     }
+    
+
 }
+
+function toggleTheme() {
+    if (localStorage.getItem("theme") === "dark-mode") {
+        document.body.classList.toggle("dark-mode");
+    }
+    else {
+        ldocument.body.classList.toggle("light-mode");
+    }
+}
+
+
+
+
