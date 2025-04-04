@@ -87,12 +87,13 @@ footer div a {
 
 footer img {
     width: fit-content;
-    height: 100px;
+    width: 160px;
 }
 
 footer p {
     font-size: 15px;
     font-weight: 800;
+    height: 70px;
 }
 
 #iphone {
