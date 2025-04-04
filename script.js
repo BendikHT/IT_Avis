@@ -51,3 +51,18 @@ sok();
 function dropdown() {
     dropdown_content.classList.toggle("dropdown-content-show");
 }
+
+
+function theme(){
+    const body = document.querySelector("body");
+    const main = document.querySelector("main");
+    const header = document.querySelector("header");
+    const article = document.querySelectorAll("article");
+
+    body.classList.toggle("dark-mode");
+    main.classList.toggle("dark-mode");
+    header.classList.toggle("dark-mode-header");
+    article.forEach((element) => {
+        element.classList.toggle("dark-mode-article");
+    });
+}
