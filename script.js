@@ -71,16 +71,15 @@ function theme() {
 
 window.onload = function () {
     const theme = localStorage.getItem("theme");
+    const theme_icon = document.getElementById("theme_icon");
 
     if (theme === "dark-mode") {
         document.body.classList.add("dark-mode");
-        const theme_icon = document.getElementById("theme_icon");
         if (theme_icon) {
             theme_icon.innerHTML = `<i class="fa-solid fa-moon"></i>`;
         }
     } else {
         document.body.classList.remove("dark-mode");
-        const theme_icon = document.getElementById("theme_icon");
         if (theme_icon) {
             theme_icon.innerHTML = `<i class="fa-regular fa-sun"></i>`;
         }
