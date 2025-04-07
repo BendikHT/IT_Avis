@@ -18,26 +18,33 @@
 <body>
     <header>
         <div id="header-start">
-            <a href="../index.html"><img src="../logo/logo-tekst.svg" alt="" id="logoImg"></a>
+            <a href="index.html"><img src="logo/logo-tekst.svg" alt="" id="logoImg"></a>
         </div>
         <div id="header-slutt">
             <div id="search">
                 <i class="fa-solid fa-magnifying-glass"> </i>
                 <input type="text" id="search-bar" placeholder="Søk">
             </div>
-            <i class="fa-regular fa-sun"></i>
-
+            <div id="theme_icon" onclick="theme()">
+                <i class="fa-regular fa-sun" ></i>
+            </div>
             <i class="fa-solid fa-bars" id="dropdown" onclick="dropdown()"></i>
         </div>
-        
     </header>
     <div id="dropdown-content">
-        <a href="../index.html" id="dropdown-content-tekst"><div id="dropdown-content-valgt"></div>Hjem</a>
-        <div id="dropdown-content-tekst"><div id="dropdown-content-valgt"></div>Nyheter
+        <a href="index.html" class="dropdown-content-tekst">
+            <div id="dropdown-content-valgt"></div>Hjem
+        </a>
+        <div class="dropdown-content-tekst">
+            <div id="dropdown-content-valgt"></div>Nyheter
 
         </div>
-        <a href="../spill.html" id="dropdown-content-tekst"><div id="dropdown-content-valgt"></div>Spill</a>
-        <span id="dropdown-content-tekst"><div id="dropdown-content-valgt"></div>Om Oss</span>
+        <a href="dropdown/memes.html" class="dropdown-content-tekst">
+            <div id="dropdown-content-valgt"></div>Dagens memes
+        </a>
+        <a href="dropdown/om_oss.html" class="dropdown-content-tekst">
+            <div id="dropdown-content-valgt"></div>Om Oss
+        </a>
     </div>
 
     <main>
