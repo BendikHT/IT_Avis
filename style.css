@@ -180,7 +180,7 @@ h2 {
     color: var(--tekst-hvit);
 }
 
-.dark-mode article{
+.dark-mode article, footer div a{
     background-color: var(--bakgrunn-artikler)!important;
     color: var(--tekst-hvit);
 }
