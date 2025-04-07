@@ -205,11 +205,6 @@ h2 {
     right: 0 !important;
 }
 
-#dropdown-content::-webkit-scrollbar {
-    width: 0px;
-    background: transparent
-}
-
 #dropdown-content-valgt {
     width: 0px;
     height: 20px;
