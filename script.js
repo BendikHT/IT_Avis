@@ -18,10 +18,10 @@ const articles = [
     { title: "«R.E.P.O» er den nyeste virale spillhitten", url: "artikkler/repo.html" },
     { title: "Russisk Unit 29155 angriper NATO og allierte nasjoner.", url: "artikkler/russik-hackere.html" },
     { title: "Apple avduker ny AI-drevet MacBook: En milepæl innen bærbare datamaskiner", url: "artikkler/ai_pc.html" },
-    { title: "Selskapet har samlet inn norsk DNA. Nå går de konkurs. Hva skjer med dataene våre da?", url:"konkurs.html"},
-    { title: "Nå er iOS 18.4 her", url:"ios18.html"},
-    { title: "Toppforsker slutter i Google og advarer mot kunstig intelligens", url:"toppforsker.html"},
-    { title: "Nintendo har tre Switch 2-dager denne uken", url:"nintendo2.html"}
+    { title: "Selskapet har samlet inn norsk DNA. Nå går de konkurs. Hva skjer med dataene våre da?", url: "konkurs.html" },
+    { title: "Nå er iOS 18.4 her", url: "ios18.html" },
+    { title: "Toppforsker slutter i Google og advarer mot kunstig intelligens", url: "toppforsker.html" },
+    { title: "Nintendo har tre Switch 2-dager denne uken", url: "nintendo2.html" }
 ];
 const dropdown_content = document.getElementById("dropdown-content")
 let search_result_number = 0;
@@ -30,11 +30,14 @@ input.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         localStorage.setItem("search", input.value);
         window.open("../search.html", "_self");
+        sok();
     }
 });
 function sok() {
     const user_search = localStorage.getItem("search");
-
+    if (!search_main) {
+        return;
+    }
     articles.forEach(article => {
         if (article.title.toLocaleLowerCase().includes(user_search.toLowerCase())) {
             const articleElm = document.createElement("article");
@@ -50,7 +53,9 @@ function sok() {
         resultat_tekst.innerHTML = `Ditt søk på ${user_search} ga: ${search_result_number} treff`;
 }
 
-// sok();
+document.addEventListener("DOMContentLoaded", () => {
+    sok();
+});
 
 function dropdown() {
     dropdown_content.classList.toggle("dropdown-content-show");
