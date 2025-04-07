@@ -252,22 +252,41 @@ h2 {
 }   
 .om-oss div{
     display: flex;
+    flex-direction: column;
+    text-align: center;
     border: 2px solid black;
     background-color: var(--bakgrunn-lys);
-    height: 500px;
     padding: 20px;
-    margin: 20px;
-    width: 200px;
+    width: 260px;
+    height: 400px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    gap: 10px;
 }
 
-.om-oss h2{
-    width: 170px;
+.om-oss h2, .om-oss h3 {
+    margin: 5px 0;
+}
+
+.om-oss p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.overskrift {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .om-oss{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 @media (width < 930px) {
