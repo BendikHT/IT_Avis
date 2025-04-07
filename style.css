@@ -255,7 +255,6 @@ h2 {
     flex-direction: column;
     text-align: center;
     border: 2px solid black;
-    background-color: var(--bakgrunn-lys);
     padding: 20px;
     width: 260px;
     height: 400px;
