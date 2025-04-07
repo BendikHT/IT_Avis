@@ -72,6 +72,10 @@ footer {
     margin: auto;
 }
 
+.karusell::-webkit-scrollbar{
+    visibility: hidden;
+}
+
 .karusell {
     display: flex;
     flex-direction: row;
