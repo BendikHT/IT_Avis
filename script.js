@@ -56,9 +56,8 @@ function dropdown() {
     dropdown_content.classList.toggle("dropdown-content-show");
 }
 
-
-function theme(){
-    const theme_icon = document.getElementById("theme_icon");    
+function theme() {
+    const theme_icon = document.getElementById("theme_icon");
     document.body.classList.toggle("dark-mode");
 
     if (document.body.classList.contains("dark-mode")) {
@@ -68,21 +67,25 @@ function theme(){
         theme_icon.innerHTML = `<i class="fa-regular fa-sun"></i>`;
         localStorage.setItem("theme", "light-mode");
     }
-    
-
 }
 
-function toggleTheme() {
+window.onload = function () {
     const theme = localStorage.getItem("theme");
 
     if (theme === "dark-mode") {
         document.body.classList.add("dark-mode");
+        const theme_icon = document.getElementById("theme_icon");
+        if (theme_icon) {
+            theme_icon.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+        }
     } else {
         document.body.classList.remove("dark-mode");
+        const theme_icon = document.getElementById("theme_icon");
+        if (theme_icon) {
+            theme_icon.innerHTML = `<i class="fa-regular fa-sun"></i>`;
+        }
     }
-}
-
-toggleTheme();
+};
 
 
 
