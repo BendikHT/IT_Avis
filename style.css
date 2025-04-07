@@ -230,7 +230,7 @@ h2 {
     align-items: center;
 }
 
-#dropdown-content-tekst:hover #dropdown-content-valgt {
+.dropdown-content-tekst:hover #dropdown-content-valgt {
     width: 5px;
     height: 20px;
     background-color: var(--logofarge);
