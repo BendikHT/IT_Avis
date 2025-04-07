@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analytiker: EU må slå tilbake mot tekgigantene | Tek News</title>
+    <title>Selskapet har samlet inn norsk DNA. Nå går de konkurs. Hva skjer med dataene våre da? | Tek News</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style_artikkler.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -23,19 +23,26 @@
                 <i class="fa-solid fa-magnifying-glass"> </i>
                 <input type="text" id="search-bar" placeholder="Søk">
             </div>
-            <i class="fa-regular fa-sun" onclick="theme()"></i>
-
+            <div id="theme_icon" onclick="theme()">
+                <i class="fa-regular fa-sun" ></i>
+            </div>
             <i class="fa-solid fa-bars" id="dropdown" onclick="dropdown()"></i>
         </div>
-        
     </header>
     <div id="dropdown-content">
-        <a href="index.html" id="dropdown-content-tekst"><div id="dropdown-content-valgt"></div>Hjem</a>
-        <div id="dropdown-content-tekst"><div id="dropdown-content-valgt"></div>Nyheter
+        <a href="../index.html" class="dropdown-content-tekst">
+            <div id="dropdown-content-valgt"></div>Hjem
+        </a>
+        <div class="dropdown-content-tekst">
+            <div id="dropdown-content-valgt"></div>Nyheter
 
         </div>
-        <a href="spill.html" id="dropdown-content-tekst"><div id="dropdown-content-valgt"></div>Spill</a>
-        <span id="dropdown-content-tekst"><div id="dropdown-content-valgt"></div>Om Oss</span>
+        <a href="spill.html" class="dropdown-content-tekst">
+            <div id="dropdown-content-valgt"></div>Spill
+        </a>
+        <span class="dropdown-content-tekst">
+            <div id="dropdown-content-valgt"></div>Om Oss
+        </span>
     </div>
     <main>
 
