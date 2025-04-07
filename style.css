@@ -232,24 +232,61 @@ h2 {
     border-radius: 20px;
 }
 
-.om-oss div{
+.memes{
     display: flex;
-    border: 2px solid black;
-    background-color: var(--bakgrunn-lys);
-    height: 500px;
-    padding: 20px;
-    margin: 20px;
-    width: 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* valgfritt, for vertikal hvis container har høyde */
+    width: 100%;
 }
 
-.om-oss h2{
-    width: 170px;
+.memes > img{
+    width: 451px;
+    height: 460px;
+    padding: 10px;
+}
+
+#memes_overskitft{
+    text-align: center;
+    margin-bottom: 20px;
+}   
+.om-oss div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid black;
+    background-color: var(--bakgrunn-lys);
+    padding: 20px;
+    width: 260px;
+    height: 400px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.om-oss h2, .om-oss h3 {
+    margin: 5px 0;
+}
+
+.om-oss p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.overskrift {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .om-oss{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 @media (width < 930px) {
@@ -265,14 +302,16 @@ h2 {
     article.small h1 {
         font-size: 4vw;
     }
+
+    .memes{
+        flex-direction: column;
+    }
 }
 
 @media screen and (width < 600px) {
     main {
         width: 100%;
     }
-
-    
 
     #header-slutt {
         width: 80%;
