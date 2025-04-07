@@ -29,7 +29,11 @@ let search_result_number = 0;
 input.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         localStorage.setItem("search", input.value);
-        window.open("../search.html", "_self");
+        if (window.location.pathname.endsWith("index.html")) {
+            window.open("search.html", "_self");
+        } else {
+            window.open("../search.html", "_self");
+        }
         sok();
     }
 });
