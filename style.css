@@ -184,6 +184,10 @@ h2 {
     background-color: var(--bakgrunn-artikler)!important;
     color: var(--tekst-hvit);
 }
+.dark-mode .om-oss div{
+
+    border: 2px solid var(--tekst-hvit);
+}
 
 #dropdown-content {
     display: flex;
