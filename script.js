@@ -24,7 +24,7 @@ let search_result_number = 0;
 input.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         localStorage.setItem("search", input.value);
-        window.open("search.html", "_self");
+        window.open("../search.html", "_self");
     }
 });
 function sok() {
@@ -68,15 +68,16 @@ function theme(){
 }
 
 function toggleTheme() {
-    if (localStorage.getItem("theme") === "dark-mode") {
-        document.body.classList.toggle("dark-mode");
-    }
-    else {
-        ldocument.body.classList.toggle("light-mode");
+    const theme = localStorage.getItem("theme");
+
+    if (theme === "dark-mode") {
+        document.body.classList.add("dark-mode");
+    } else {
+        document.body.classList.remove("dark-mode");
     }
 }
 
-document.addEventListener("DOMContentLoaded", toggleTheme())
+toggleTheme();
 
 
 
