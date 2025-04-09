@@ -29,7 +29,7 @@ let search_result_number = 0;
 input.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         localStorage.setItem("search", input.value);
-        if (window.location.pathname.endsWith("index.html")) {
+        if (window.location.pathname.endsWith("index.html")||window.location.pathname.endsWith("search.html")) {
             window.open("search.html", "_self");
         } else {
             window.open("../search.html", "_self");
