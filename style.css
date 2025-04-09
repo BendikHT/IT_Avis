@@ -167,7 +167,7 @@ h2 {
     background-color: var(--bakgrunn-mork) !important;
     color: var(--tekst-hvit) !important;
 }
-.dark-mode p, .dark-mode .dropdown-content-tekst{
+.dark-mode p, .dark-mode .dropdown-content-tekst, .dark-mode a{
     color: var(--tekst-hvit) !important;
 }
 
@@ -180,7 +180,8 @@ h2 {
     color: var(--tekst-hvit);
 }
 
-.dark-mode article, .dark-mode a{
+.dark-mode article{
+    background-color: var(--bakgrunn-artikler);
     color: var(--tekst-hvit);
 }
 .dark-mode .om-oss div{
