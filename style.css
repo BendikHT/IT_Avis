@@ -180,8 +180,7 @@ h2 {
     color: var(--tekst-hvit);
 }
 
-.dark-mode article, .dark-mode footer div a{
-    background-color: var(--bakgrunn-artikler)!important;
+.dark-mode article, .dark-mode a{
     color: var(--tekst-hvit);
 }
 .dark-mode .om-oss div{
@@ -205,6 +204,9 @@ h2 {
     transition: right 0.4s ease;
 }
 
+#dropdown-content::-webkit-scrollbar {
+    background: transparent;
+}  
 .dropdown-content-show {
     right: 0 !important;
 }
@@ -298,29 +300,33 @@ footer{
     align-items: center;
     flex-direction: column;
     background-color: var(--nav-bar-mork);
-    height: 200px;
+    height: 25vh;
     margin-top: 40px;
     width: 100%;
     color: white;
 }
 
 footer img{
-    height: 100px;
+    height: 12vh;
     width: fit-content;
 }
 
-#footerbunn{
+footer p{
+    font-weight: 100;
+}
+
+#footerlink{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 230px;
 }
-#footerbunn a{
+#footerlink a{
     color: white;
     border-bottom: 1px dotted gray;
     font-weight: 100;    
 }
-#footerbunn a:hover{
+#footerlink a:hover{
     border-bottom: 1px solid white;
 }
 
