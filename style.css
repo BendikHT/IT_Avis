@@ -292,6 +292,38 @@ h2 {
     margin-bottom: 20px;
 }
 
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--nav-bar-mork);
+    height: 200px;
+    margin-top: 40px;
+    width: 100%;
+    color: white;
+}
+
+footer img{
+    height: 100px;
+    width: fit-content;
+}
+
+#footerbunn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 230px;
+}
+#footerbunn a{
+    color: white;
+    border-bottom: 1px dotted gray;
+    font-weight: 100;    
+}
+#footerbunn a:hover{
+    border-bottom: 1px solid white;
+}
+
 @media (width < 930px) {
     main {
         width: 97%;
