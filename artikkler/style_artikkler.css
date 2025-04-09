@@ -67,7 +67,7 @@ h3 {
     margin: auto;
 }
 
-footer {
+.bunn {
     width: 60%;
     margin: auto;
 }
@@ -82,19 +82,19 @@ footer {
     overflow-x: scroll;
 }
 
-footer div a {
+.bunn div a {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
     margin: 10px;
 }
 
-footer img {
+.bunn img {
     width: fit-content;
     width: 160px;
 }
 
-footer p {
+.bunn p {
     font-size: 15px;
     font-weight: 800;
     height: 70px;
